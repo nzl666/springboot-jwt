@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <properties>
+        <property name="dialect" value="mysql"/>
+    </properties>
+    <typeHandlers>
+        <typeHandler javaType="com.liumapp.helloSv.backend.web.model.enums.Status"
+                     handler="org.apache.ibatis.type.EnumOrdinalTypeHandler"/>
+        <typeHandler javaType="com.liumapp.helloSv.backend.web.model.enums.PermissionType"
+                     handler="org.apache.ibatis.type.EnumOrdinalTypeHandler"/>
+        <typeHandler javaType="com.liumapp.helloSv.backend.web.model.enums.UploadType"
+                     handler="org.apache.ibatis.type.EnumOrdinalTypeHandler"/>
+        <typeHandler javaType="com.liumapp.helloSv.backend.web.model.enums.CostStatus"
+                     handler="org.apache.ibatis.type.EnumOrdinalTypeHandler"/>
+        <typeHandler javaType="com.liumapp.helloSv.backend.web.model.enums.AccountStatus"
+                     handler="org.apache.ibatis.type.EnumOrdinalTypeHandler"/>
+    </typeHandlers>
+
+</configuration>
